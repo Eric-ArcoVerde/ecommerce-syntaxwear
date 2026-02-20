@@ -1,7 +1,35 @@
+/* ---------- BASE ---------- */
 body {
     font-family: var(--fonte-principal);
     color: #333333;
-    background-color: #000000;
+}
+
+.btn {
+    font-size: 1.25rem;
+    width: 161px;
+    height: 48px;
+    border-radius: 25px;
+    color: #ffffff;
+    font-weight: 400;
+    padding: 10px 20px;
+    transition: background-color 0.3s, border 0.3s;
+}
+
+.btn-outline {
+    border: 2px solid #ffffff;
+    background-color: transparent;
+    line-height: 23px;
+}
+
+.btn-filled {
+    background-color: #ffffff;
+    color: #6329A2;
+}
+
+.btn:hover {
+    background-color: #6329A2;
+    color: #ffffff;
+    border-color: #6329A2;
 }
 
 /* --------- Header ---------- */
@@ -96,30 +124,64 @@ body {
     font-weight: 400;
 }
 
-.btn {
-    font-size: 1.25rem;
-    width: 161px;
-    height: 48px;
-    border-radius: 25px;
-    color: #ffffff;
-    font-weight: 400;
-    padding: 10px 20px;
-    transition: background-color 0.3s, border 0.3s;
+/* ---------- Categorias ---------- */
+
+.categories-section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
 }
 
-.btn-outline {
-    border: 2px solid #ffffff;
-    background-color: transparent;
-    line-height: 23px;
+.category-card {
+    position: relative;
+    width: 317px;
+    height: 500px;
+    border-radius: 16px;
+    overflow: hidden;
 }
 
-.btn-filled {
-    background-color: #ffffff;
-    color: #6329A2;
+.overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.25);
+    z-index: 1;
 }
 
-.btn:hover {
-    background-color: #6329A2;
-    color: #ffffff;
-    border-color: #6329A2;
+/* .category-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+.category-name {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    text-align: center;
 }
+
+.casual {
+    background: url('../images/produtos/casual.jpg') no-repeat center;
+    background-size: cover;
+}
+
+.moderno {
+    background: url('../images/produtos/moderno.jpg') no-repeat center;
+    background-size: cover;
+}
+
+.esporte {
+    background: url('../images/produtos/esportivo.jpg') no-repeat center;
+    background-size: cover;
+}
+
+.futurista {
+    background: url('../images/produtos/futurista.jpg') no-repeat center;
+    background-size: cover;
+}
+
