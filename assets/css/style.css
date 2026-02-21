@@ -5,7 +5,7 @@ body {
 }
 
 main {
-    padding: 2.5rem 0 0;
+    padding: 2.5rem 0 2.5rem;
     max-width: 1360px;
     margin: 0 auto;
 }
@@ -115,7 +115,7 @@ main {
 
 .hero-buttons {
     display: flex;
-    gap: 16px;
+    gap: 1rem;
 }
 
 .hero-content .hero-title {
@@ -139,7 +139,7 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 25px;
+    gap: 1.875rem;
 }
 
 .category-card {
@@ -240,7 +240,7 @@ main {
         'top1 top1 top2 top2'
         'top1 top1 midL midR'
         'bottomL bottomL midL bottomR';
-    gap: 30px;
+    gap: 1.875rem;
 }
 
 .top1-content{
@@ -267,5 +267,75 @@ main {
 
 .cta-group {
     display: flex;
-    gap: 10px;
+    gap: 0.625rem;
+}
+
+/* --------- Footer ---------- */
+.footer {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+.footer-content {
+    max-width: 1360px;
+    margin: 0 auto;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    gap: 3.125rem;
+}
+
+.footer-nav {
+    display: flex;
+    gap: 1.25rem;
+}
+
+.footer-nav ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    gap: 1rem;
+}
+
+.footer-nav h4 {
+    color: #EDEDED;
+    font-size: 1.25rem;
+    margin-bottom: 16px;
+    display: block;
+    font-weight: 400;
+}
+
+.footer-nav li a:hover {
+    text-decoration: underline;
+}
+
+.newsletter-form input {
+    border-radius: 30px;
+    color: #AAAAAA;
+    padding: 12px 20px;
+    width: 344px;
+}
+
+.footer-social ul {
+    display: flex;
+    gap: 1.25rem;
+}
+
+.footer-social h3 {
+    margin-bottom: 16px;
+}
+
+.footer-social li a:hover img {
+    opacity: 0.7;
+}
+
+.footer-copyright {
+    font-size: 1.25rem;
+    text-align: center;
+    padding: 20px 0;
 }
