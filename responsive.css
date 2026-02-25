@@ -1,0 +1,133 @@
+@media (max-width: 1280px) {
+    main {
+        padding: 0.625rem;
+    }
+
+    .header {
+        width: calc(100% - 40px);
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .nav-container {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 200px;
+        flex-direction: column;
+        padding: 80px 20px 20px;
+        background-color: #ffffff;
+        gap: 2rem;
+        transition: right 0.3s ease;
+        align-items: flex-start;
+    }
+
+    .nav-center,
+    .nav-right {
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-center ul,
+    .nav-right ul {
+        flex-direction: column;
+        gap: 1.5rem;
+        width: 100%;
+    }
+
+    .nav-center a,
+    .nav-right a {
+        width: 100%;
+        border-bottom: 1px solid #eeeeee;
+        padding: 0.3rem 0;
+        font-size: 1rem;
+        display: block;
+    }
+
+    .menu-toggle:checked~.nav-container {
+        right: 0;
+    }
+}
+
+@media (max-width: 1000px){
+    .footer-content {
+        flex-direction: column;
+        gap: 2rem;
+        padding: 2rem 1rem;
+    }
+
+    .footer-nav {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .footer-social ul {
+        gap: 1rem;
+    }
+
+    .footer-copyright {
+        font-size: 1rem;
+        padding: 1.5rem 0 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        height: 660px;
+        background: url('./assets/images/banners/hero.jpg');
+    }
+
+    .hero-overlay {
+        padding: 0;
+    }
+
+    .hero-content .hero-title {
+        font-size: 1.5rem;
+    }
+
+    .hero-content .hero-subtitle {
+        font-size: 1.25rem;
+    }
+
+    .hero-content {
+        max-width: 330px;
+        margin: 0 auto;
+    }
+
+    .btn {
+        font-size: 1.2rem;
+    }
+
+    .grid-section {
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: repeat(5, auto);
+        grid-template-areas: 
+        "top1 top1"
+        "bottomL bottomL"
+        "midL midR"
+        "midL bottomR"
+        "top2 top2";
+        max-width: 100%;
+        gap: 0.625rem;
+    }
+
+    .top1 {
+        min-height: 500px;
+    }
+
+    .bottomL, .top2{
+        min-height: 190px;
+    }
+
+    .midL {
+        min-height: 370px;
+    }
+}
+
+@media (max-width: 500px) {
+    .category-card {
+        width: 100%;
+    }
+}
