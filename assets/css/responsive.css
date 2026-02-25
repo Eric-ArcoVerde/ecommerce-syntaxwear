@@ -76,7 +76,7 @@
 @media (max-width: 768px) {
     .hero-section {
         height: 660px;
-        background: url('./assets/images/banners/hero.jpg');
+        background-image: url(../images/banners/hero-mobile.jpg);
     }
 
     .hero-overlay {
